@@ -14,7 +14,7 @@
       <title>怎样搭建个人博客 |  罗兰的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/blog/favicon.ico" />
        
 <link rel="stylesheet" href="/blog/dist/main.css">
 
@@ -83,7 +83,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">127</span>
+            <span class="post-count">383</span>
         </span>
     </span>
 
@@ -112,7 +112,24 @@
 <h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><h3 id="2-新建存放博客项目的文件夹，用git-bash依次执行以下命令："><a href="#2-新建存放博客项目的文件夹，用git-bash依次执行以下命令：" class="headerlink" title="2.新建存放博客项目的文件夹，用git bash依次执行以下命令："></a>2.新建存放博客项目的文件夹，用git bash依次执行以下命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或 hexo s</span><br></pre></td></tr></table></figure>
 <p>如前面成功执行，执行完后会生成链接，打开就能看到页面 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
 <h3 id="3-把任意-md格式文章添加进source目录"><a href="#3-把任意-md格式文章添加进source目录" class="headerlink" title="3.把任意.md格式文章添加进source目录"></a>3.把任意.md格式文章添加进source目录</h3><h3 id="4-生成网页"><a href="#4-生成网页" class="headerlink" title="4.生成网页"></a>4.生成网页</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h3 id="4-生成博客"><a href="#4-生成博客" class="headerlink" title="4.生成博客"></a>4.生成博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="5-生成博客"><a href="#5-生成博客" class="headerlink" title="5.生成博客"></a>5.生成博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-github部署博客"><a href="#6-github部署博客" class="headerlink" title="6.github部署博客"></a>6.github部署博客</h3><p>github新建仓库，配置SSHkey,本地关联github仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>博客根目录的_config.yml文件中，修改deploy为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/仓库名.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>url也要修改为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: https://用户名.github.io/仓库名</span><br></pre></td></tr></table></figure>
+
+<p><strong>（注意：仓库名要与github仓库名一致，不写仓库名图片可能会显示不出来！）</strong><br>参数：post_asset_folder也要改成true, 即</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="7-常见的坑处理方法："><a href="#7-常见的坑处理方法：" class="headerlink" title="7.常见的坑处理方法："></a>7.常见的坑处理方法：</h3><p>hexo如果不显示最新的修改，git bash执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>如果图片显示不出来，检查图片路径是否正确。theme主题文件夹的_config.yml文件中，对应图的路径也要修改。如主页的图片显示不出来，这里的路径加了&#x2F;blog，即对应根目录_config.yml文件url里的仓库名，其他静态文件同理，如头像，网站图标等：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cover:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  path: /blog/images/cover1.jpg <span class="comment"># /source/images目录下附送多张美图，可更换</span></span><br></pre></td></tr></table></figure>
 
  
       <!-- reward -->
@@ -269,7 +286,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/blog/"><img src="/images/ayer-side.svg" alt="罗兰的博客"></a>
+    <a href="/blog/"><img src="/blog/images/ayer-side.svg" alt="罗兰的博客"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -570,23 +587,6 @@
 </script>
 
 
-    
-    <div id="music">
-    
-    
-    
-    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
-        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
-</div>
-
-<style>
-    #music {
-        position: fixed;
-        right: 15px;
-        bottom: 0;
-        z-index: 998;
-    }
-</style>
     
     
 
