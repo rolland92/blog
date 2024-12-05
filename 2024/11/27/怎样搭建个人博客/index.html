@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="zh-CN">
   
 
     <head>
@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>怎样搭建个人博客 |  罗兰的博客</title>
+      <title>怎样免费搭建个人博客 |  罗兰的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/blog/favicon.ico" />
@@ -67,7 +67,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  怎样搭建个人博客
+  怎样免费搭建个人博客
 </h1>
  
 
@@ -82,8 +82,8 @@
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">383</span>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">394</span>
         </span>
     </span>
 
@@ -91,8 +91,8 @@
         &nbsp; | &nbsp;
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1 分钟</span>
         </span>
     </span>
 </div>
@@ -107,7 +107,7 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="使用Hexo搭建步骤"><a href="#使用Hexo搭建步骤" class="headerlink" title="使用Hexo搭建步骤"></a>使用Hexo搭建步骤</h2><p>参考：[b站] (<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click&vd_source=4367faa1cd6d7d6e46ee7510a49037ad">https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click&amp;vd_source=4367faa1cd6d7d6e46ee7510a49037ad</a>)</p>
+  <h2 id="使用Hexo搭建步骤"><a href="#使用Hexo搭建步骤" class="headerlink" title="使用Hexo搭建步骤"></a>使用Hexo搭建步骤</h2><p>参考：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click&vd_source=4367faa1cd6d7d6e46ee7510a49037ad">b站</a></p>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo官网</a></p>
 <h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><h3 id="2-新建存放博客项目的文件夹，用git-bash依次执行以下命令："><a href="#2-新建存放博客项目的文件夹，用git-bash依次执行以下命令：" class="headerlink" title="2.新建存放博客项目的文件夹，用git bash依次执行以下命令："></a>2.新建存放博客项目的文件夹，用git bash依次执行以下命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或 hexo s</span><br></pre></td></tr></table></figure>
 <p>如前面成功执行，执行完后会生成链接，打开就能看到页面 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
@@ -128,15 +128,16 @@
 <h3 id="7-常见的坑处理方法："><a href="#7-常见的坑处理方法：" class="headerlink" title="7.常见的坑处理方法："></a>7.常见的坑处理方法：</h3><p>hexo如果不显示最新的修改，git bash执行以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
-<p>如果图片显示不出来，检查图片路径是否正确。theme主题文件夹的_config.yml文件中，对应图的路径也要修改。如主页的图片显示不出来，这里的路径加了&#x2F;blog，即对应根目录_config.yml文件url里的仓库名，其他静态文件同理，如头像，网站图标等：</p>
+<p>如果图片显示不出来，可以尝试如下方法。<br>方法一：检查图片路径是否正确。theme主题文件夹的_config.yml文件中，对应图的路径也要修改。如主页的图片显示不出来，这里的路径加了&#x2F;blog，即对应根目录_config.yml文件url里的仓库名，其他静态文件同理，如头像，网站图标等：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cover:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  path: /blog/images/cover1.jpg <span class="comment"># /source/images目录下附送多张美图，可更换</span></span><br></pre></td></tr></table></figure>
 
+<p>方法二：使用<a target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a>等图片托管平台。</p>
  
       <!-- reward -->
       
       <div id="reword-out">
         <div id="reward-btn">
-          Donate
+          打赏
         </div>
       </div>
       
@@ -149,9 +150,9 @@
       <ul class="post-copyright">
         <li>
           <i class="ri-copyright-line"></i>
-          <strong>Copyright： </strong>
+          <strong>版权声明： </strong>
           
-          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
           
         </li>
       </ul>
@@ -240,7 +241,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2024
+        2019-2024
         <i class="ri-heart-fill heart_icon"></i> Rolland Luo
       </li>
     </ul>
@@ -251,6 +252,13 @@
     </ul>
     <ul>
       <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
         
       </li>
     </ul>
@@ -304,19 +312,15 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/blog/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/blog/photos">相册</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
+      <a class="nav-item-link" href="/blog/about">关于我</a>
     </li>
     
     <li class="nav-item">
       <a class="nav-item-link" href="/blog/friends">友链</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/blog/2019/about">关于我</a>
     </li>
     
   </ul>
@@ -325,14 +329,10 @@
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
-      
-      <a class="nav-item-link" target="_blank" href="/blog/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
       
     </li>
   </ul>
@@ -349,7 +349,7 @@
 <!-- #reward -->
 <div id="reward">
   <span class="close"><i class="ri-close-line"></i></span>
-  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯奶茶吧~</p>
   <div class="reward-box">
     
     <div class="reward-item">
@@ -509,7 +509,9 @@
 <!-- Katex -->
 
 <!-- busuanzi  -->
-
+ 
+<script src="/blog/js/busuanzi-2.3.pure.min.js"></script>
+ 
 <!-- ClickLove -->
 
 <!-- ClickBoom1 -->
