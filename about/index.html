@@ -94,6 +94,60 @@
      class="circular-image"> -->
 
  <!-- 方式1：直接在 img 标签上使用 style 属性 -->
+
+ <style>
+/* .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+/* 防止内容溢出和滚动条出现 */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;  /* 隐藏水平滚动条 */
+}
+
+/* 确保 iframe 不会超出容器宽度 */
+iframe {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;  /* 确保padding和border计入总宽度 */
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin: 0;  /* 移除可能导致溢出的边距 */
+        padding: 0;  /* 移除可能导致溢出的内边距 */
+    }
+}
+
+/* 在移动设备上只显示1列 */
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+iframe {
+      width: 100%;
+      height: 750px;
+      overflow: hidden
+      /* width: 600px;
+      height: 750px */
+/* }  */
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <p><img src="/blog/images/articleImg/女程序员头像.jpg" width="200" alt style="border-radius: 10%;"></p>
 <p style="color: grey;">A developer, live in shenzhen, China.</p>
 
@@ -104,19 +158,26 @@
 
 
 <h3 id="女java开发一枚，喜欢研究技术，喜欢尝试新鲜事物。"><a href="#女java开发一枚，喜欢研究技术，喜欢尝试新鲜事物。" class="headerlink" title="女java开发一枚，喜欢研究技术，喜欢尝试新鲜事物。"></a>女java开发一枚，喜欢研究技术，喜欢尝试新鲜事物。</h3><p>爱好广泛：如编程、吉他、口琴、羽毛球。</p>
-<p>之所以做这个个人博客，是因为懒得做千篇一律的自我介绍，一切尽在不言中。</p>
-<p>以下是本人的一些口琴吉他作品：</p>
-<!-- <video src='https://www.douyin.com/user/self?from_tab_name=main&modal_id=7432770906667126073&showTab=post' type='video/mp4' controls='controls'  width='100%' height='100%'>
+<p>之所以做这个个人博客，是因为懒得做千篇一律的自我介绍，做个博客一目了然。</p>
+<p>以下是本人的一些口琴吉他作品，更多音乐作品可以关注我的抖音账号：1238174258</p>
+<!-- <video src='https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0' type='video/mp4' controls='controls'  width='100%' height='100%'>
 </video> -->
-<p>口琴：</p>
+<p><em><strong>口琴</strong></em>：</p>
 <div style="display: flex; justify-content: space-between;">
-    <iframe width="580" height="750" frameborder="0" src="https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
-    <iframe width="580" height="750" frameborder="0" src="https://open.douyin.com/player/video?vid=7409735744178179338&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
-    <iframe width="580" height="750" frameborder="0" src="https://open.douyin.com/player/video?vid=7323936188220427556&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+<!-- iframe width="580" height="750" -->
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7409735744178179338&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7323936188220427556&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
 </div>
 
 
 
+<p><em><strong>吉他</strong></em>：</p>
+<div style="display: flex; justify-content: space-between;">
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7396615324356955404&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7399270422371405092&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+    <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7123615150665518347&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
+</div>
  
       <!-- reward -->
       
