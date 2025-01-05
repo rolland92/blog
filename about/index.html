@@ -124,14 +124,37 @@ iframe {
 
 /* 移动端样式 */
 @media screen and (max-width: 768px) {
-    .douyin-videos {
+    /* .douyin-videos {
       flex-direction: column !important; 
     }
     .douyin-videos iframe {
         width: 100% !important;  /* 移动端占据全宽 */
         height: 500px;  /* 可以调整移动端的高度 */
-        margin-bottom: 20px;  /* 垂直间距 */
+        margin-bottom: 20px;  /* 垂直间距 
+    } */
+
+
+    .douyin-videos {
+        flex-direction: column !important;
     }
+    
+    .douyin-videos iframe {
+        display: none !important; /* 在移动端隐藏iframe */
+    }
+    
+    .mobile-notice {
+        display: block !important;
+        text-align: center;
+        padding: 20px;
+        margin: 10px 0;
+        background: #f5f5f5;
+        border-radius: 8px;
+    }
+   
+}
+
+ .mobile-notice {
+    display: none; /* PC端默认隐藏提示 */
 }
 
 /* 在移动设备上只显示1列 */
@@ -175,7 +198,11 @@ iframe {
     <!-- <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7323936188220427556&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe> -->
 </div>
 
-
+<div class="mobile-notice">
+    <p>📱 移动端访问请点击以下链接查看视频：</p>
+    <p><a target="_blank" rel="noopener" href="https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0">口琴-富士山下</a></p>
+    <p><a target="_blank" rel="noopener" href="https://open.douyin.com/player/video?vid=7409735744178179338&autoplay=0">口琴-一生所爱</a></p>
+</div>
 
 
 
