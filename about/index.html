@@ -121,11 +121,30 @@ iframe {
     box-sizing: border-box;  /* 确保padding和border计入总宽度 */
 }
 
+
+/* 
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* gap: 20px;   添加间距 
+} */
+
+/* .video-container iframe {
+    width: calc(50% - 10px);  /* PC端每个iframe占50%减去间距的一半 */
+    /* height: 100vh;            可以根据抖音标准尺寸调整 */
+    /* border: none; */
+/* }  */
+
+/* 移动端样式 */
 @media screen and (max-width: 768px) {
-    .column {
-        width: 100%;
-        margin: 0;  /* 移除可能导致溢出的边距 */
-        padding: 0;  /* 移除可能导致溢出的内边距 */
+    .douyin-videos {
+      flex-direction: column !important; 
+    }
+    .douyin-videos iframe {
+        width: 100% !important;  /* 移动端占据全宽 */
+        height: 500px;  /* 可以调整移动端的高度 */
+        margin-bottom: 20px;  /* 垂直间距 */
     }
 }
 
@@ -157,18 +176,24 @@ iframe {
 <li>微信: wise_lan</li>
 之所以做这篇个人博客，是因为懒得做千篇一律的自我介绍，做个博客一目了然。
 
-<h3 id="女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。"><a href="#女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。" class="headerlink" title="女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。"></a>女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。</h3><p>爱好广泛：如<br>1.编程(java、python)<br>2.音乐类（吉他、口琴、钢琴）<br>3.运动类（羽毛球、游泳、跑步）<br><img src="/blog/about/hobbies.jpg" alt="爱好全家福"></p>
+<h3 id="女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。"><a href="#女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。" class="headerlink" title="女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。"></a>女java开发一枚，IT民工，喜欢研究技术，喜欢尝试新鲜事物。</h3><p>爱好广泛：如<br>1.编程(java、python)<br>2.音乐类（吉他、口琴、钢琴）<br>3.运动类（羽毛球、游泳、瑜伽、跑步）<br><img src="/blog/about/hobbies.jpg" alt="爱好全家福"></p>
 <!-- *** -->
 <p>以下是本人的部分口琴和吉他作品：</p>
 <!-- <video src='https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0' type='video/mp4' controls='controls'  width='100%' height='100%'>
 </video> -->
 <p><em><strong>口琴</strong></em>：</p>
-<div style="display: flex; justify-content: space-between;">
+<!-- <div class="video-container"> -->
+<div class="douyin-videos" style="display: flex; justify-content: space-between;">
 <!-- iframe width="580" height="750" -->
     <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7432770906667126073&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
     <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7409735744178179338&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
     <!-- <iframe frameborder="1" src="https://open.douyin.com/player/video?vid=7323936188220427556&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe> -->
 </div>
+<!-- </div> -->
+
+
+
+
 
 <p><em><strong>吉他</strong></em>：</p>
 <div style="display: flex; justify-content: space-between;">
@@ -178,7 +203,7 @@ iframe {
 </div>
 
 <p>更多音乐作品可以关注我的抖音账号：<br><img src="/blog/about/douyinNamecard.jpg" width="200px" height="300px"></p>
-<p>一些荣誉奖牌：<br><img src="/blog/about/award.jpg" width="500px" height="700px"></p>
+<p>一些运动类的荣誉奖牌：<br><img src="/blog/about/award.jpg" width="500px" height="700px"></p>
 <!-- ![一些奖项](about/award.jpg) -->
  
       <!-- reward -->
@@ -270,7 +295,7 @@ iframe {
     <ul>
       <li>
         Copyrights &copy;
-        2019-2024
+        2019-2025
         <i class="ri-heart-fill heart_icon"></i> Rolland Luo
       </li>
     </ul>
