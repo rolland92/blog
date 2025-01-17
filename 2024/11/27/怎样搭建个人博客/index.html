@@ -83,7 +83,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">394</span>
+            <span class="post-count">506</span>
         </span>
     </span>
 
@@ -92,7 +92,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -132,7 +132,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cover:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  path: /blog/images/cover1.jpg <span class="comment"># /source/images目录下附送多张美图，可更换</span></span><br></pre></td></tr></table></figure>
 
 <p>方法二：使用<a target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a>等图片托管平台。</p>
- 
+<h3 id="8-插入图表-安装图表插件"><a href="#8-插入图表-安装图表插件" class="headerlink" title="8.插入图表,安装图表插件"></a>8.插入图表,安装图表插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-chart --save</span><br></pre></td></tr></table></figure>
+
+<p>参考<a target="_blank" rel="noopener" href="https://www.chartjs.org/docs/latest/general/data-structures.html">chart.js</a><br>曲线图：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;% chart 90% 300 %&#125;</span><br><span class="line">    &#123;</span><br><span class="line">    <span class="built_in">type</span>: <span class="string">&#x27;line&#x27;</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">    labels: [<span class="string">&#x27;January&#x27;</span>, <span class="string">&#x27;February&#x27;</span>, <span class="string">&#x27;March&#x27;</span>, <span class="string">&#x27;April&#x27;</span>, <span class="string">&#x27;May&#x27;</span>, <span class="string">&#x27;June&#x27;</span>, <span class="string">&#x27;July&#x27;</span>],</span><br><span class="line">    datasets: [&#123;</span><br><span class="line">        label: <span class="string">&#x27;My First dataset&#x27;</span>,</span><br><span class="line">        backgroundColor: <span class="string">&#x27;rgb(255, 99, 132)&#x27;</span>,</span><br><span class="line">        borderColor: <span class="string">&#x27;rgb(255, 99, 132)&#x27;</span>,</span><br><span class="line">        data: [0, 10, 5, 2, 20, 30, 45]</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;,</span><br><span class="line">    options: &#123;</span><br><span class="line">        responsive: <span class="literal">true</span>,</span><br><span class="line">        title: &#123;</span><br><span class="line">        display: <span class="literal">true</span>,</span><br><span class="line">        text: <span class="string">&#x27;Chart.js Line Chart&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endchart %&#125;</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
       <div id="reword-out">
