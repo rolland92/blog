@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>归档: 2024/11 |  罗兰的博客</title>
+      <title>markdown语法与html对比 |  罗兰的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/blog/favicon.ico" />
@@ -55,73 +55,478 @@
       
     <main class="content on">
       <section class="outer">
-  
-  
-  <article class="articles">
+  <article
+  id="post-markdown语法与html对比"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">2024/11</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/blog/archives/2024" class="archive-year">2024</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/blog/2024/11/27/%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  <time datetime="2024-11-27T15:42:28.500Z" itemprop="datePublished">11/27</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/blog/2024/11/27/%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
-    >怎样免费搭建个人博客</a> 
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  markdown语法与html对比
+</h1>
  
 
-    </header>
-    
-    
-  </div>
-</article>
       
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/blog/2024/11/27/hello-world/" class="archive-article-date">
-  <time datetime="2024-11-27T15:15:29.066Z" itemprop="datePublished">11/27</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/blog/2024/11/27/hello-world/"
-    >Hello World</a> 
-</h2>
- 
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/2024/12/13/markdown%E8%AF%AD%E6%B3%95%E4%B8%8Ehtml%E5%AF%B9%E6%AF%94/" class="article-date">
+  <time datetime="2024-12-12T16:43:30.401Z" itemprop="datePublished">2024-12-13</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">496</span>
+        </span>
+    </span>
 
-    </header>
-    
-    
-  </div>
-</article>
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">2 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
       
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <table>
+<thead>
+<tr>
+<th><strong>对比点</strong></th>
+<th><strong>Html</strong></th>
+<th><strong>Markdown</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题 (一级-六级)</td>
+<td></td>
+<td>方式一：（#+空格+正文）</td>
+<td>一级标题下有一条横线，#后有空格</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h1&gt;</td>
+<td>#</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h2&gt;</td>
+<td>##</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h3&gt;</td>
+<td>###</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h4&gt;</td>
+<td>####</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h5&gt;</td>
+<td>#####</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;h6&gt;</td>
+<td>######</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>方式2：（正文下方一行加以下符号，只显示两级）</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>————-</td>
+<td></td>
+</tr>
+<tr>
+<td>有序列表</td>
+<td>&lt;ol&gt;</td>
+<td>1.</td>
+<td>数字加点后直接跟内容</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;li&gt;&lt;&#x2F;li&gt;</td>
+<td>2.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;&#x2F;ol&gt;</td>
+<td>3.</td>
+<td></td>
+</tr>
+<tr>
+<td>无序列表</td>
+<td>&lt;ul&gt;</td>
+<td>*</td>
+<td>符号后需加空格，否则无效</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;li&gt;&lt;&#x2F;li&gt;</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;&#x2F;ul&gt;</td>
+<td>+</td>
+<td></td>
+</tr>
+<tr>
+<td>代码块</td>
+<td></td>
+<td>‘’’代码块’’’</td>
+<td></td>
+</tr>
+<tr>
+<td>引用</td>
+<td>短引用，浏览器效果添加“”：</td>
+<td>&gt;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;q&gt;&lt;&#x2F;q&gt;</td>
+<td>&gt;&gt;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>长引用，浏览器效果：缩进：</td>
+<td>&gt;&gt;&gt;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;blockquote&gt;&lt;&#x2F;blockquote&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>分割线</td>
+<td>&lt;hr&gt;</td>
+<td>*****</td>
+<td>三种形式都行，至少三个符号</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>___</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>———-</td>
+<td></td>
+</tr>
+<tr>
+<td>链接</td>
+<td>&lt;a href&#x3D;””url””&gt;Link text&lt;&#x2F;a&gt;</td>
+<td>行内式:</td>
+<td>行内式或参数式</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>[显示标题](链接地址)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>参数式:</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>[显示标题]： 链接地址</td>
+<td></td>
+</tr>
+<tr>
+<td>图片</td>
+<td>&lt;img src&#x3D;””&gt;</td>
+<td>行内式:</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>[显示标题](链接地址)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>参数式(本地图片地址):</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>![显示标题]：(.&#x2F;xx.png)</td>
+<td></td>
+</tr>
+<tr>
+<td>表格</td>
+<td>&lt;table&gt;</td>
+<td>| 列1 | 列2 | 列3 |</td>
+<td>第一行表头</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;tr&gt;&lt;&#x2F;tr&gt;</td>
+<td>|——-|——-|——-|</td>
+<td>第二行-定义对齐，至少三个-，:— 表示左对齐</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;td&gt;&lt;&#x2F;td&gt;</td>
+<td>| 行1-1 | 行1-2 | 行1-3 |</td>
+<td>:—: 表示居中对齐</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;tr&gt;&lt;&#x2F;tr&gt;</td>
+<td>| 行2-1 | 行2-2 | 行2-3 |</td>
+<td>—: 表示右对齐</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;&#x2F;table&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>强调</td>
+<td>&lt;b&gt;&lt;&#x2F;b&gt;</td>
+<td>*斜体*</td>
+<td>斜体：用单个星号或下划线包围文本。</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;i&gt;&lt;&#x2F;i&gt;</td>
+<td>_斜体_</td>
+<td>粗体：用两个星号或下划线包围文本。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>**粗体**</td>
+<td>粗斜体：用三个星号或下划线包围文本。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>__粗体__</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>***粗斜体***</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>___粗斜体___</td>
+<td></td>
+</tr>
+<tr>
+<td>转义</td>
+<td>&lt; ：&lt;</td>
+<td>\</td>
+<td>转义前加\就能显示原来的符号，如*显示为*</td>
+</tr>
+<tr>
+<td></td>
+<td>&gt; ：&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&amp; ：&amp;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>“” ：””</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>‘ ：’</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>删除线</td>
+<td>&lt;del&gt;&lt;&#x2F;del&gt;</td>
+<td>~~待删除内容~~</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;&#x2F;s&gt;&lt;&#x2F;s&gt;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
       
     </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://rolland92.github.io/blog/2024/12/13/markdown%E8%AF%AD%E6%B3%95%E4%B8%8Ehtml%E5%AF%B9%E6%AF%94/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
   </div>
-  
-  
+
+   
+  <nav class="article-nav">
+    
+      <a href="/blog/2025/03/01/%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E5%AF%B9%E6%AF%94/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            对话模型 vs 推理模型
+          
+        </div>
+      </a>
+    
+    
+      <a href="/blog/2024/11/27/%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">怎样免费搭建个人博客</div>
+      </a>
+    
+  </nav>
 
   
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -258,6 +663,22 @@
 <script src="/blog/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/blog/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
